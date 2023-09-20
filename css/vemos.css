@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------- HEADER ---------------- */
+
+main{
+    width: 100%;
+}
+
+header{
+    background-color: #D4D5D0;
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "shop logo contact"
+    ;
+}
+
+.shop{
+    grid-area: shop;
+}
+
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    grid-area: contact;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+}
+
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family:'Catamaran', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .3125rem;
+}
+
+
+/* ---------------------------- INDEX --------------------------- */
+
+/* ----------------- PORTADA ---------------- */
+
+.main-image{
+    width: 100%;
+    height: 45.1875rem;
+    background-image: url(../assets/img/shoes.jpeg);
+    background-size: cover;
+}
+
+.main-image h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 14.375rem;
+}
+
+.main-image h3 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* -------------- INFO BRAND ------------ */
+
+.info-brand{
+    width: 100%;
+    height: 25rem;
+    display: grid;
+    background-color: #D4D5D0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "free-ship refund safe-pay"
+    ;
+}
+
+.free-ship{
+    grid-area: free-ship;
+    text-align: center;
+}
+
+.refund{
+    grid-area: refund;
+    text-align: center;
+}
+
+.safe-pay{
+    grid-area: safe-pay;
+    text-align: center;
+}
+
+.info-brand-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 4.375rem 1.25rem 4.375rem;
+}
+
+.info-brand-article h3{
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: .125rem;
+}
+
+.info-brand-article p{
+    font-family: 'Catamaran', sans-serif;
+    font-size: .9375rem;
+    letter-spacing: .0625rem;
+}
+
+/* ---------------- TOP SELLERS --------------- */
+
+.top-sellers{
+    width: 100%;
+    height: 31.25rem;
+    background-color: #D4D5D0;
+}
+
+.top-sellers h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .3125rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    background-color: #ADADAD;
+    padding: 1.25rem;
+} 
+
+.top-prod{
+    width: 100%;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "shoes1-ts shoes2-ts shoes3-ts"
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.shoes1-ts{
+    grid-area: shoes1-ts;
+}
+
+.shoes2-ts{
+    grid-area: shoes2-ts;
+}
+
+.shoes3-ts{
+    grid-area: shoes3-ts;
+}
+
+.top-prod article img{
+    width: 100%;
+}
+
+.card-ts{
+    width: 18.75rem;
+    height: 21.25rem;
+    background-color: #D9D9D9;
+    border: 1px black solid;
+}
+
+.top-prod div h3{
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-size: .9375rem;
+    letter-spacing: .125rem;
+}
+
+.name-price{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+/* ----------------- CATEGORIAS ----------------- */
+
+.categories-main{
+    width: 100%;
+    height: 22.5625rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "adidas-cat nike-cat nb-cat cm-cat"
+    ;
+}
+
+.adidas-cat-main{
+    grid-area: adidas-cat;
+    background-image: url(../assets/img/a-cat-black.png);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+
+}
+
+.nike-cat-main{
+    grid-area: nike-cat;
+    background-image: url(../assets/img/n-cat-black.png);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+}
+
+.nb-cat-main{
+    grid-area: nb-cat;
+    background-image: url(../assets/img/nb-cat-black.png);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+}
+
+.cm-cat-main{
+    grid-area: cm-cat;
+    background-image: url(../assets/img/cm-cat-black.png);
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+}
+
+.categories-main div button{
+    background-color: #D9D9D9;
+    padding: 1.25rem 3.125rem 1.25rem 3.125rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.categories-main div button a{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .25rem;
+}
+
+/* --------------- NEWSLETTER -------------- */
+
+.newsletter{
+    width: 100%;
+    height: 12.125rem;
+    background-color: #ABC18E;
+}
+
+.newsletter h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.875rem;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.5625rem;
+    letter-spacing: .4375rem;
+    font-weight: 100;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.875rem;
+}
+
+.newsletter form input[type="email"]{
+    width: 329px;
+    height: 53px;
+    border:0.8px solid grey;
+    background-color: rgba(255, 255, 255, 0.675);
+} 
+
+.newsletter form input[type="submit"]{
+	width:188px;
+    height: 53px;
+	/* padding:8px 16px; */
+	/* margin-top:32px; */
+	border:0.8px solid grey;
+	display:block;
+	color: black;
+	background-color:#9CB67A;
+    cursor: pointer;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .4375rem;
+    font-weight: 100;
+    text-transform: uppercase;
+} 
+
+.newsletter form input[placeholder="Email"]{
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .4375rem;
+    font-weight: 100;
+    padding-left: .625rem;
+}
+
+
+/* ------------- FOOTER --------------- */
+
+footer{
+	width: 100%;
+	height: 17.6875rem;
+	background-color: #D9D9D9;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 100%;
+	grid-template-areas: 
+	"nav-1 nav-2 nav-3 nav-4"
+	;
+}
+
+.nav-1{
+	grid-area: nav-1;
+}
+
+.nav-2{
+	grid-area: nav-2;
+}
+
+.nav-3{
+	grid-area: nav-3;
+}
+
+.nav-4{
+	grid-area: nav-4;
+}
+
+footer nav ul{
+    list-style: none;
+}
+
+footer nav li{
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+}
+
+footer nav li a{
+    color: black;
+    text-decoration: none;
+
+}
+
+/* ------------------------ SHOP -------------------------- */
+
+.shop-main{
+    width: 100%;
+    height: 158.75rem;
+    background-color: #002A52;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 780px 780px 780px 100px;
+    grid-template-areas: 
+    "filter sort"
+    "product1 product2"
+    "product3 product4"
+    "product5 product6"
+    ". ."
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.product-1-shop{
+    grid-area: product1;
+    width: 36.0625rem;
+    height: 41rem;
+    background-color: #D9D9D9;
+
+}
+
+.product-1-shop img{
+    width: 100%;
+}
+
+.product-2-shop{
+    grid-area: product2;
+    width: 36.0625rem;
+    height: 41rem;
+    background-color: #D9D9D9;
+}
+
+.product-2-shop img{
+    width: 100%;
+}
+
+.product-3-shop{
+    grid-area: product3;
+    width: 36.0625rem;
+    height: 41rem;
+    background-color: #D9D9D9;
+
+}
+
+.product-3-shop img{
+    width: 100%;
+}
+
+.product-4-shop{
+    grid-area: product4;
+    width: 36.0625rem;
+    height: 41rem;
+    background-color: #D9D9D9;
+}
+
+.product-4-shop img{
+    width: 100%;
+}
+
+.product-5-shop{
+    grid-area: product5;
+    width: 36.0625rem;
+    height: 41rem;
+    background-color: #D9D9D9;
+
+}
+
+.product-5-shop img{
+    width: 100%;
+}
+
+.product-6-shop{
+    grid-area: product6;
+    width: 36.0625rem;
+    height: 41rem;
+    background-color: #D9D9D9;
+}
+
+.product-6-shop img{
+    width: 100%;
+}
+
+.filter{
+    grid-area: filter;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    padding: 40px 0px 0px 100px;
+}
+
+.sort{
+    grid-area: sort;
+    display: flex;
+    justify-content:flex-end;
+    color: white;
+    padding: 40px 100px 0px 0px;
+}
+
+.text-product{
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .25rem;
+    display: flex;
+    justify-content: center;
+    gap: 18.75rem;
+}
+
+/* --------------------- CONTACTO ----------------- */
+
+.contact-main{
+    width: 100%;
+    height: 51.9375rem;
+    background-color: #D4D5D0;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "contact-box list-grid"
+    ;
+
+}
+
+/* cajita de contacto */
+
+.contact-form-box{
+    grid-area: contact-box;
+}
+
+.contact-list-grid{
+    grid-area: list-grid;
+}
+
+.div-form-contact{
+    background-color: #729F84;
+    width: 50.125rem;
+    height: 45rem;
+    margin-left: 3.75rem;
+    border-radius: 3.125rem;
+}
+
+.div-form-contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.75rem;
+}
+
+.div-form-contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-form-contact form legend{
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    font-size: 2.125rem;
+    letter-spacing: .875rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.same-input{
+    background-color: #d9d9d997;
+    width: 26.5rem;
+    height: 3.6875rem;
+    border-radius: 1.25rem;
+    border: none;
+    margin-top: 40px;
+}
+
+.contact-form-box form input[placeholder="Name"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+    font-weight: 300;
+    padding-left: .9375rem;
+    color: #587d66;
+}
+
+.contact-form-box form input[placeholder="Mail"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+    font-weight: 300;
+    padding-left: .9375rem;
+    color: #587d66;
+}
+
+.div-form-contact form input[type="text"]{
+    width: 26.5rem;
+    height: 9.625rem;
+    background-color: #d9d9d997;
+    border-radius: 1.25rem;
+    border: none;
+    margin-top: 40px;
+}
+
+.div-form-contact form input[placeholder="Message"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+    font-weight: 300;
+    padding-left: .9375rem;
+    padding-bottom: 6.25rem;
+    color: #587d66;
+}
+
+.div-form-contact form input[type="submit"]{
+    background-color: #4D6B59;
+    width: 8.1875rem;
+    height: 2.875rem;
+    border-radius: .625rem;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.div-form-contact form input[value="send"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #729F84;
+}
+
+/* lista de info contacto */
+
+.info-contacto{
+    list-style: none;
+}
+
+.info-contacto li{
+    padding: 1.875rem 0rem 0rem .625rem;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+}
+
+.iframe-maps{
+    padding-top: .625rem;
+}
+
+/* --------------------- CART --------------------- */
+
+/* carrito icono flotante */
+.cart-icon-main{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 50%;
+    padding: .625rem;
+    margin: 1.25rem;
+    box-shadow: 4px 4px 20px black;
+}
+
+/* carrito page */
+
+.shop-cart{
+    background-color: #161B28;
+    width: 100%;
+    /* height: 50.6875rem; */
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 175px 250px 375px;
+    grid-template-areas: 
+    "cart-title ."
+    "cart-prod1 summary"
+    "cart-prod2 summary"
+    ;
+}
+
+.cart-title{
+    grid-area: cart-title;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.cart-title h2{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.875rem;
+    letter-spacing: .375rem;
+    text-transform: uppercase; 
+    font-weight: 200;
+    color: white;
+}
+
+.cart-title h3{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .375rem;
+    text-transform: uppercase; 
+    font-weight: 100;
+    color: white;
+}
+
+.cart-prod1{
+    grid-area: cart-prod1;
+    background-color: #D9D9D9;
+    width: 680px;
+    height: 180px;
+    margin-left: 100px;
+    display: flex;
+    position: relative;
+}
+
+.cart-prod1 img{
+    height: 100%;
+}
+
+.info-prod1{
+    padding-left: 20px;
+}
+
+.info-prod1 h3{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .1875rem;
+    font-weight: 100;
+    padding-top: .625rem;
+}
+
+.size-cart{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    letter-spacing: .1875rem;
+    font-weight: 100;
+    padding-top: .625rem;
+}
+
+.cart-price{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    letter-spacing: .1875rem;
+    font-weight: 500;
+    padding-top: 3.125rem;
+}
+
+.cruz-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.agregar-icon{
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cart-prod2{
+    grid-area: cart-prod2;
+    background-color: #D9D9D9;
+    width: 680px;
+    height: 180px;
+    margin-left: 100px;
+    display: flex;
+    position: relative;
+}
+
+.cart-prod2 img{
+    height: 100%;
+}
+
+.info-prod2{
+    padding-left: 20px;
+}
+
+.info-prod2 h3{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .1875rem;
+    font-weight: 100;
+    padding-top: .625rem;
+}
+
+.summary-box{
+    grid-area: summary;
+    width: 20.9375rem;
+    height: 39.0625rem;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 35% 55%;
+    grid-template-areas: 
+    "summary-grid summary-grid"
+    "lista-1 lista-2"
+    "check-out check-out"
+    ;
+}
+
+.summary-grid{
+    grid-area: summary-grid;
+    background-color: #C6C6C6;
+}
+
+.summary-grid h3{
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    color: #161b28bd;
+    letter-spacing: 10px;
+    font-size: 20px;
+    display: flex; 
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.class-2i{
+    grid-area: lista-1;
+}
+
+.ul-list{
+    list-style: none;
+}
+
+.ul-list li{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.823);
+    padding-top: 5px;
+}
+
+.right-list{
+    padding: 20px 0px 0px 20px;
+}
+
+.left-list{
+    padding: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.class-fr{
+    grid-area: lista-2;
+}
+
+.check-out{
+    grid-area: check-out;
+    display: flex;
+    justify-content: center;
+}
+
+.check-out button{
+    background-color: #161B28;
+    width: 277px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+}
+
+.check-out button a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+}
+
+/* ------------------ PRODUCT ----------------- */
+
+.main-product{
+    width: 100%;
+    height: 1355px;
+    background-color: #D9D9D9;
+    border-top: 1.5px black solid;
+    display: grid;
+    grid-template-columns: 61% 39%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "galeria info-producto"
+    "recomendaciones mas-info"
+    ;
+}
+
+.galeria-fotos{
+    grid-area: galeria;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "img-vertical img-principal"
+    ;
+}
+
+.e-producto{
+    grid-area: info-producto;
+    background-color: #A7A8A5;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "name-prod"
+    "price-prod"
+    "color-var"
+    "size-buttons"
+    "add-button"
+    "."
+    "."
+    "."
+    ;
+}
+
+.name-prod{
+    grid-area: name-prod;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 32px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.price-prod{
+    grid-area: price-prod;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+
+.color-var{
+    grid-area: color-var;
+    padding-left: 30px;
+}
+
+.color-var p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.color-var ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+}
+
+.color-var ul li img{
+    cursor: pointer;
+    width: 30px;
+}
+
+.size-buttons{
+    grid-area: size-buttons;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.size-1 button{
+    background-color: #C9CAC5;
+    width: 307px;
+    height: 46px;
+    border-radius: 20px;
+    border: 0.5px black solid;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.size-1 button p{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 8px;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.size-1 button img{
+    width: 30px;
+    position: absolute;
+    top: 6px;
+    right: 13px;
+}
+
+.size-2 button{
+    background-color: #C9CAC5;
+    width: 69px;
+    height: 46px;
+    border-radius: 20px;
+    border: 0.5px black solid;
+    margin-left: 40px;
+    background-image: url(../assets/img/cinta-metrica.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 13px;
+    cursor: pointer;
+
+}
+
+.add-button{
+    grid-area: add-button;
+    padding-left: 30px;
+}
+
+.add-button p{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.add-button button{
+    background-color: black;
+    color: white;
+    width: 425px;
+    height: 73px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.recomendaciones{
+    grid-area: recomendaciones;
+}
+
+.recomendaciones h2{
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding: 40px 0px 30px 50px;
+}
+
+.rec-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-ymal{
+    width: 250px;
+    height: 283px;
+    border: 0.8px black solid;
+    background-color: #D9D9D9;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.449);
+}
+
+.img-ymal img{
+    width: 100%;
+}
+
+.img-ymal-info h3{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.img-ymal-info{
+    padding: .3125rem;
+    display: flex;
+    gap: 5.625rem;
+}
+
+.button-showmore{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.button-showmore button{
+    width: 128px;
+    height: 37px;
+    background-color: #D9D9D9;
+    border: 1px black solid;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.449);
+}
+
+.button-showmore button a{
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+
+.mas-info{
+    grid-area: mas-info;
+    background-color: #A7A8A5;
+    display: flex;
+    flex-direction: column;
+    padding: 58px 0px 0px 35px;
+}
+
+.button-des button{
+    background-color: #676767;
+    width: 468px;
+    height: 51px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 0.5px black solid;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-det button{
+    background-color: #676767;
+    width: 468px;
+    height: 51px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 0.5px black solid;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-siz button{
+    background-color: #676767;
+    width: 468px;
+    height: 51px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 0.5px black solid;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.mas-info p{
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 8px;
+}
+
+.img-flecha{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.img-flecha img{
+    width: 28px;
+}
+
+.img-vertical{
+    grid-area: img-vertical;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.img-principal{
+    grid-area: img-principal;
+    background-image: url(../assets/img/Rectangle41.png);
+    background-size: cover;
+}

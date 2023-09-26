@@ -74,19 +74,6 @@ nav{
     background-size: cover;
 }
 
-.main-image h3{
-    display: flex;
-    justify-content: center;
-    padding-top: 14.375rem;
-}
-
-.main-image h3 a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'Catamaran', sans-serif;
-}
-
 /* -------------- INFO BRAND ------------ */
 
 .info-brand{
@@ -297,17 +284,15 @@ nav{
 }
 
 .newsletter form input[type="email"]{
-    width: 329px;
-    height: 53px;
+    width: 20.5625rem;
+    height: 3.3125rem;
     border:0.8px solid grey;
     background-color: rgba(255, 255, 255, 0.675);
 } 
 
 .newsletter form input[type="submit"]{
-	width:188px;
-    height: 53px;
-	/* padding:8px 16px; */
-	/* margin-top:32px; */
+	width:11.75rem;
+    height: 3.3125rem;
 	border:0.8px solid grey;
 	display:block;
 	color: black;
@@ -402,7 +387,6 @@ footer nav li a{
     width: 36.0625rem;
     height: 41rem;
     background-color: #D9D9D9;
-
 }
 
 .product-1-shop img{
@@ -471,7 +455,7 @@ footer nav li a{
     display: flex;
     align-items: flex-start;
     color: white;
-    padding: 40px 0px 0px 100px;
+    padding: 2.5rem 0rem 0rem 6.25rem;
 }
 
 .sort{
@@ -479,7 +463,7 @@ footer nav li a{
     display: flex;
     justify-content:flex-end;
     color: white;
-    padding: 40px 100px 0px 0px;
+    padding: 2.5rem 6.25rem 0rem 0rem;
 }
 
 .text-product{
@@ -554,7 +538,7 @@ footer nav li a{
     height: 3.6875rem;
     border-radius: 1.25rem;
     border: none;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .contact-form-box form input[placeholder="Name"]{
@@ -581,7 +565,7 @@ footer nav li a{
     background-color: #d9d9d997;
     border-radius: 1.25rem;
     border: none;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .div-form-contact form input[placeholder="Message"]{
@@ -600,7 +584,7 @@ footer nav li a{
     height: 2.875rem;
     border-radius: .625rem;
     border: none;
-    margin-top: 10px;
+    margin-top: .625rem;
     cursor: pointer;
 }
 
@@ -662,8 +646,8 @@ footer nav li a{
 
 .cart-title{
     grid-area: cart-title;
-    padding-top: 50px;
-    padding-left: 100px;
+    padding-top: 3.125rem;
+    padding-left: 6.25rem;
 }
 
 .cart-title h2{
@@ -687,9 +671,9 @@ footer nav li a{
 .cart-prod1{
     grid-area: cart-prod1;
     background-color: #D9D9D9;
-    width: 680px;
-    height: 180px;
-    margin-left: 100px;
+    width: 42.5rem;
+    height: 11.25rem;
+    margin-left: 6.25rem;
     display: flex;
     position: relative;
 }
@@ -699,7 +683,7 @@ footer nav li a{
 }
 
 .info-prod1{
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .info-prod1 h3{
@@ -712,7 +696,7 @@ footer nav li a{
 
 .size-cart{
     font-family: 'Catamaran', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: .1875rem;
     font-weight: 100;
     padding-top: .625rem;
@@ -720,23 +704,23 @@ footer nav li a{
 
 .cart-price{
     font-family: 'Catamaran', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: .1875rem;
     font-weight: 500;
     padding-top: 3.125rem;
 }
 
 .cruz-icon{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     top: 0;
     right: 0;
 }
 
 .agregar-icon{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     transform: rotate(45deg);
     position: absolute;
     bottom: 0;
@@ -746,9 +730,9 @@ footer nav li a{
 .cart-prod2{
     grid-area: cart-prod2;
     background-color: #D9D9D9;
-    width: 680px;
-    height: 180px;
-    margin-left: 100px;
+    width: 42.5rem;
+    height: 11.25rem;
+    margin-left: 6.25rem;
     display: flex;
     position: relative;
 }
@@ -758,7 +742,7 @@ footer nav li a{
 }
 
 .info-prod2{
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .info-prod2 h3{
@@ -793,11 +777,11 @@ footer nav li a{
     font-family: 'Catamaran', sans-serif;
     text-transform: uppercase;
     color: #161b28bd;
-    letter-spacing: 10px;
-    font-size: 20px;
+    letter-spacing: .625rem;
+    font-size: 1.25rem;
     display: flex; 
     justify-content: center;
-    padding-top: 10px;
+    padding-top: .625rem;
 }
 
 .class-2i{
@@ -810,19 +794,19 @@ footer nav li a{
 
 .ul-list li{
     font-family: 'Catamaran', sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
+    font-size: .9375rem;
+    letter-spacing: .125rem;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.823);
-    padding-top: 5px;
+    padding-top: .3125rem;
 }
 
 .right-list{
-    padding: 20px 0px 0px 20px;
+    padding: 1.25rem 0rem 0rem 1.25rem;
 }
 
 .left-list{
-    padding: 20px 20px 0px 0px;
+    padding: 1.25rem 1.25rem 0rem 0rem;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
@@ -841,8 +825,8 @@ footer nav li a{
 
 .check-out button{
     background-color: #161B28;
-    width: 277px;
-    height: 60px;
+    width: 17.3125rem;
+    height: 3.75rem;
     cursor: pointer;
     border: none;
     box-shadow: 1px 1px 10px black;
@@ -852,16 +836,16 @@ footer nav li a{
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 6px;
+    letter-spacing: .375rem;
     font-family: 'Catamaran', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* ------------------ PRODUCT ----------------- */
 
 .main-product{
     width: 100%;
-    height: 1355px;
+    height: 84.6875rem;
     background-color: #D9D9D9;
     border-top: 1.5px black solid;
     display: grid;
@@ -904,30 +888,30 @@ footer nav li a{
 .name-prod{
     grid-area: name-prod;
     font-family: 'Catamaran', sans-serif;
-    font-size: 32px;
-    letter-spacing: 10px;
+    font-size: 2rem;
+    letter-spacing: .625rem;
     text-transform: uppercase;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 .price-prod{
     grid-area: price-prod;
     font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    letter-spacing: 10px;
+    font-size: 1.625rem;
+    letter-spacing: .625rem;
     text-transform: uppercase;
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 .color-var{
     grid-area: color-var;
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 .color-var p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    letter-spacing: 10px;
+    font-size: 1rem;
+    letter-spacing: .625rem;
     text-transform: uppercase;
 }
 
@@ -935,26 +919,26 @@ footer nav li a{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    padding: 20px;
+    gap: .9375rem;
+    padding: 1.25rem;
 }
 
 .color-var ul li img{
     cursor: pointer;
-    width: 30px;
+    width: 1.875rem;
 }
 
 .size-buttons{
     grid-area: size-buttons;
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 .size-1 button{
     background-color: #C9CAC5;
-    width: 307px;
-    height: 46px;
+    width: 19.1875rem;
+    height: 2.875rem;
     border-radius: 20px;
     border: 0.5px black solid;
     display: flex;
@@ -965,53 +949,52 @@ footer nav li a{
 .size-1 button p{
     font-family: 'Catamaran', sans-serif;
     font-weight: 100;
-    font-size: 24px;
-    letter-spacing: 8px;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
     justify-content: left;
-    padding-left: 20px;
-    padding-top: 3px;
+    padding-left: 1.25rem;
+    padding-top: .1875rem;
 }
 
 .size-1 button img{
-    width: 30px;
+    width: 1.875rem;
     position: absolute;
-    top: 6px;
-    right: 13px;
+    top: .375rem;
+    right: .8125rem;
 }
 
 .size-2 button{
     background-color: #C9CAC5;
-    width: 69px;
-    height: 46px;
+    width: 4.3125rem;
+    height: 2.875rem;
     border-radius: 20px;
     border: 0.5px black solid;
-    margin-left: 40px;
+    margin-left: 2.5rem;
     background-image: url(../assets/img/cinta-metrica.png);
-    background-size: 40px;
+    background-size: 2.5rem;
     background-repeat: no-repeat;
-    background-position: 13px;
+    background-position: .8125rem;
     cursor: pointer;
-
 }
 
 .add-button{
     grid-area: add-button;
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 
 .add-button p{
     font-family: 'Catamaran', sans-serif;
     font-weight: 100;
-    font-size: 24px;
-    letter-spacing: 8px;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
     text-transform: uppercase;
 }
 
 .add-button button{
     background-color: black;
     color: white;
-    width: 425px;
-    height: 73px;
+    width: 26.5625rem;
+    height: 4.5625rem;
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -1025,10 +1008,10 @@ footer nav li a{
 .recomendaciones h2{
     text-transform: uppercase;
     font-family: 'Catamaran', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.25rem;
+    letter-spacing: .125rem;
     font-weight: 100;
-    padding: 40px 0px 30px 50px;
+    padding: 2.5rem 0rem 1.875rem 3.125rem;
 }
 
 .rec-img{
@@ -1038,8 +1021,8 @@ footer nav li a{
 }
 
 .img-ymal{
-    width: 250px;
-    height: 283px;
+    width: 15.625rem;
+    height: 17.6875rem;
     border: 0.8px black solid;
     background-color: #D9D9D9;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.449);
@@ -1051,8 +1034,8 @@ footer nav li a{
 
 .img-ymal-info h3{
     font-family: 'Catamaran', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: .875rem;
+    letter-spacing: .0625rem;
     font-weight: 100;
 }
 
@@ -1065,12 +1048,12 @@ footer nav li a{
 .button-showmore{
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 4.375rem;
 }
 
 .button-showmore button{
-    width: 128px;
-    height: 37px;
+    width: 8rem;
+    height: 2.3125rem;
     background-color: #D9D9D9;
     border: 1px black solid;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.449);
@@ -1079,8 +1062,8 @@ footer nav li a{
 .button-showmore button a{
     text-transform: uppercase;
     font-family: 'Catamaran', sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: .625rem;
+    letter-spacing: .0625rem;
     color: black;
     text-decoration: none;
 }
@@ -1090,14 +1073,14 @@ footer nav li a{
     background-color: #A7A8A5;
     display: flex;
     flex-direction: column;
-    padding: 58px 0px 0px 35px;
+    padding: 3.625rem 0rem 0rem 2.1875rem;
 }
 
 .button-des button{
     background-color: #676767;
-    width: 468px;
-    height: 51px;
-    margin-bottom: 30px;
+    width: 29.25rem;
+    height: 3.1875rem;
+    margin-bottom: 1.875rem;
     border-radius: 20px;
     border: 0.5px black solid;
     display: flex;
@@ -1107,9 +1090,9 @@ footer nav li a{
 
 .button-det button{
     background-color: #676767;
-    width: 468px;
-    height: 51px;
-    margin-bottom: 30px;
+    width: 29.25rem;
+    height: 3.1875rem;
+    margin-bottom: 1.875rem;
     border-radius: 20px;
     border: 0.5px black solid;
     display: flex;
@@ -1119,9 +1102,9 @@ footer nav li a{
 
 .button-siz button{
     background-color: #676767;
-    width: 468px;
-    height: 51px;
-    margin-bottom: 30px;
+    width: 29.25rem;
+    height: 3.1875rem;
+    margin-bottom: 1.875rem;
     border-radius: 20px;
     border: 0.5px black solid;
     display: flex;
@@ -1133,19 +1116,19 @@ footer nav li a{
 .mas-info p{
     color: white;
     font-family: 'Catamaran', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding: 8px;
+    font-size: 1.25rem;
+    letter-spacing: .125rem;
+    padding: .5rem;
 }
 
 .img-flecha{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: .625rem;
+    right: .625rem;
 }
 
 .img-flecha img{
-    width: 28px;
+    width: 1.75rem;
 }
 
 .img-vertical{
@@ -1160,4 +1143,161 @@ footer nav li a{
     grid-area: img-principal;
     background-image: url(../assets/img/Rectangle41.png);
     background-size: cover;
+}
+
+
+
+@media (max-width: 1024px){
+    /* product*/
+    .size-1 button{
+        width: 16.875rem;
+    }
+    .size-2 button{
+        margin-left: .9375rem;
+    }
+    .add-button button{
+        width: 21.875rem;
+    }
+    .button-des button{
+        width: 21.875rem;
+    }
+    
+    .button-det button{
+        width: 21.875rem;
+    }
+    
+    .button-siz button{
+        width: 21.875rem;
+    }
+    /* shop */
+    .product-card{
+        width: 500px;
+        height: 600px;
+    }
+    /* contact */
+    .div-form-contact{
+        background-color: #729F84;
+        width: 580px;
+        height: 700px;
+        margin-left: 50px;
+        border-radius: 3.125rem;
+    }
+    .iframe-maps{
+        display: none;
+    }
+    .card-prods{
+        width: 540px;
+        height: 11.25rem;
+        margin-left: 6.25rem;
+    }
+}
+
+@media (max-width: 768px){
+    .card-ts{
+        width: 240px;
+        height: 300px;
+    }
+    .name-price{
+        gap: 100px;
+    }
+    .info-brand-article{
+        width: 256px;
+    }
+    .main-image{
+        background-position: 20%;
+    }
+    .product-card{
+        width: 350px;
+        height: 400px;
+    }
+    .shop-main{
+        height: 1630px;
+        grid-template-rows: 50px 510px 510px 510px 50px;
+    }
+    .text-product{
+        font-family: 'Catamaran', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+    }
+    .filter{
+        padding-top: 20px;
+    }
+    .sort{
+        padding-top: 20px;
+    }
+    .main-product{
+        height: 1696px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 534px 402px 319px 440px;
+        grid-template-areas: 
+        "galeria"
+        "info-producto"
+        "mas-info"
+        "recomendaciones"
+        ;
+    }
+    .e-producto{
+        grid-area: info-producto;
+        background-color: #A7A8A5;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "name-prod price-prod"
+        "color-var ."
+        "size-buttons ."
+        "add-button ."
+        ;
+    }
+    .price-prod{
+        padding: 30px;
+    }
+    .size-1 button{
+        width: 450px;
+    }
+    .size-2 button{
+        margin-left: .9375rem;
+    }
+    .add-button button{
+        width: 536px;
+    }
+    .button-des button{
+        width: 660px;
+    }
+    .button-det button{
+        width: 660px;
+    }
+    .button-siz button{
+        width: 660px;
+    }
+
+    .contact-main{
+        width: 100%;
+        height: 962px;
+        background-color: #D4D5D0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 620px 344px;
+        grid-template-areas: 
+        "contact-box"
+        "list-grid"
+        ;
+    }
+}
+
+@media (max-width: 425px){
+    
+}
+
+@media (max-width: 375px){
+    
+}
+
+@media (max-width: 320px){
+    
 }

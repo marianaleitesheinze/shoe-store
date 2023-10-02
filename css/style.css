@@ -1288,6 +1288,25 @@ footer nav li a{
         "list-grid"
         ;
     }
+    .categories-main{
+        width: 100%;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "adidas-cat nike-cat nb-cat cm-cat"
+        ;
+    }
+    .categories-main div button{
+        padding: .625rem 1.875rem .625rem 1.875rem;
+        border-radius: 4px;
+    } 
+    
+    .categories-main div button a{
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
 }
 
 @media (max-width: 425px){

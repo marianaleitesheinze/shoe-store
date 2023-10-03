@@ -26,6 +26,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -1085,3 +1086,19 @@ footer nav li a{
     background-image: url(../assets/img/Rectangle41.png);
     background-size: cover;
 }
+
+
+
+@media (max-width: 767px){
+    .img-equipo{
+        order: 2;
+    }
+    .lorem-equipo{
+        order: 1;
+    }
+}
+
+.news-title{
+    letter-spacing: 5px;
+}
+

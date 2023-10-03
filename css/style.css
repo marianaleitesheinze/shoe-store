@@ -366,17 +366,16 @@ footer nav li a{
 
 .shop-main{
     width: 100%;
-    height: 158.75rem;
-    background-color: #002A52;
+    height: 1250px;
+    background-color: #9a9a9a;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 780px 780px 780px 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 8% 42% 42%x 8%;
     grid-template-areas: 
-    "filter sort"
-    "product1 product2"
-    "product3 product4"
-    "product5 product6"
-    ". ."
+    "filter . . sort"
+    "product1 product2 product3 product4"
+    "product5 product6 . ."
+    ". . . ."
     ;
     justify-items: center;
     align-items: center;
@@ -384,8 +383,8 @@ footer nav li a{
 
 .product-1-shop{
     grid-area: product1;
-    width: 36.0625rem;
-    height: 41rem;
+    width: 340px;
+    height: 430px;
     background-color: #D9D9D9;
 }
 
@@ -395,8 +394,8 @@ footer nav li a{
 
 .product-2-shop{
     grid-area: product2;
-    width: 36.0625rem;
-    height: 41rem;
+    width: 340px;
+    height: 430px;
     background-color: #D9D9D9;
 }
 
@@ -406,8 +405,8 @@ footer nav li a{
 
 .product-3-shop{
     grid-area: product3;
-    width: 36.0625rem;
-    height: 41rem;
+    width: 340px;
+    height: 430px;
     background-color: #D9D9D9;
 
 }
@@ -418,8 +417,8 @@ footer nav li a{
 
 .product-4-shop{
     grid-area: product4;
-    width: 36.0625rem;
-    height: 41rem;
+    width: 340px;
+    height: 430px;
     background-color: #D9D9D9;
 }
 
@@ -429,8 +428,8 @@ footer nav li a{
 
 .product-5-shop{
     grid-area: product5;
-    width: 36.0625rem;
-    height: 41rem;
+    width: 340px;
+    height: 430px;
     background-color: #D9D9D9;
 
 }
@@ -441,8 +440,8 @@ footer nav li a{
 
 .product-6-shop{
     grid-area: product6;
-    width: 36.0625rem;
-    height: 41rem;
+    width: 340px;
+    height: 430px;
     background-color: #D9D9D9;
 }
 
@@ -473,7 +472,7 @@ footer nav li a{
     letter-spacing: .25rem;
     display: flex;
     justify-content: center;
-    gap: 18.75rem;
+    gap: 100px;
 }
 
 /* --------------------- CONTACTO ----------------- */
@@ -1148,175 +1147,145 @@ footer nav li a{
 
 
 @media (max-width: 1024px){
-    /* product*/
-    .size-1 button{
-        width: 16.875rem;
+    .shop-main{
+        height: 1000px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 8% 42% 42% 8%;
+        grid-template-areas: 
+        "filter . . sort"
+        "product1 product2 product3 product4"
+        "product5 product6 . ."
+        ". ."
+        ;
     }
-    .size-2 button{
-        margin-left: .9375rem;
-    }
-    .add-button button{
-        width: 21.875rem;
-    }
-    .button-des button{
-        width: 21.875rem;
-    }
-    
-    .button-det button{
-        width: 21.875rem;
-    }
-    
-    .button-siz button{
-        width: 21.875rem;
-    }
-    /* shop */
     .product-card{
-        width: 500px;
-        height: 600px;
+        width: 240px;
+        height: 300px;
     }
-    /* contact */
-    .div-form-contact{
-        background-color: #729F84;
-        width: 580px;
-        height: 700px;
-        margin-left: 50px;
-        border-radius: 3.125rem;
-    }
-    .iframe-maps{
-        display: none;
-    }
-    .card-prods{
-        width: 540px;
-        height: 11.25rem;
-        margin-left: 6.25rem;
+    .text-product{
+        font-size: 12px;
+        letter-spacing: .25rem;
+        gap: 80px;
     }
 }
 
 @media (max-width: 768px){
-    .card-ts{
+    .shop-main{
+        height: 960px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 8% 42% 42% 8%;
+        grid-template-areas: 
+        "filter . sort"
+        "product1 product2 product3"
+        "product4 product5 product6"
+        ". . ."
+        ;
+    }
+    .product-card{
         width: 240px;
         height: 300px;
     }
-    .name-price{
-        gap: 100px;
-    }
-    .info-brand-article{
-        width: 256px;
-    }
-    .main-image{
-        background-position: 20%;
-    }
-    .product-card{
-        width: 350px;
-        height: 400px;
-    }
-    .shop-main{
-        height: 1630px;
-        grid-template-rows: 50px 510px 510px 510px 50px;
-    }
     .text-product{
-        font-family: 'Catamaran', sans-serif;
-        text-transform: uppercase;
-        font-size: 14px;
-        letter-spacing: 2px;
-        display: flex;
-        justify-content: center;
-        gap: 200px;
-    }
-    .filter{
-        padding-top: 20px;
-    }
-    .sort{
-        padding-top: 20px;
-    }
-    .main-product{
-        height: 1696px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 534px 402px 319px 440px;
-        grid-template-areas: 
-        "galeria"
-        "info-producto"
-        "mas-info"
-        "recomendaciones"
-        ;
-    }
-    .e-producto{
-        grid-area: info-producto;
-        background-color: #A7A8A5;
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "name-prod price-prod"
-        "color-var ."
-        "size-buttons ."
-        "add-button ."
-        ;
-    }
-    .price-prod{
-        padding: 30px;
-    }
-    .size-1 button{
-        width: 450px;
-    }
-    .size-2 button{
-        margin-left: .9375rem;
-    }
-    .add-button button{
-        width: 536px;
-    }
-    .button-des button{
-        width: 660px;
-    }
-    .button-det button{
-        width: 660px;
-    }
-    .button-siz button{
-        width: 660px;
-    }
-
-    .contact-main{
-        width: 100%;
-        height: 962px;
-        background-color: #D4D5D0;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 620px 344px;
-        grid-template-areas: 
-        "contact-box"
-        "list-grid"
-        ;
-    }
-    .categories-main{
-        width: 100%;
-        height: 200px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100%;
-        grid-template-areas: 
-        "adidas-cat nike-cat nb-cat cm-cat"
-        ;
-    }
-    .categories-main div button{
-        padding: .625rem 1.875rem .625rem 1.875rem;
-        border-radius: 4px;
-    } 
-    
-    .categories-main div button a{
-        font-size: 15px;
-        letter-spacing: 3px;
+        font-size: 12px;
+        letter-spacing: .25rem;
+        gap: 80px;
     }
 }
 
 @media (max-width: 425px){
-    
+    .shop-main{
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 8% 42% 42% 8%;
+        grid-template-areas: 
+        "filter sort"
+        "product1 product2"
+        "product3 product4"
+        ". ."
+        ;
+    }
+    .product-card{
+        width: 200px;
+        height: 260px;
+    }
+    .text-product{
+        font-size: 10px;
+        letter-spacing: 2px;
+        gap: 60px;
+    }
+    .product-5-shop{
+        display: none;
+    }
+    .product-6-shop{
+        display: none;
+    }
+
 }
 
 @media (max-width: 375px){
-    
+    .shop-main{
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 8% 42% 42% 8%;
+        grid-template-areas: 
+        "filter sort"
+        "product1 product2"
+        "product3 product4"
+        ". ."
+        ;
+    }
+    .product-card{
+        width: 180px;
+        height: 240px;
+    }
+    .text-product{
+        font-size: 10px;
+        letter-spacing: 2px;
+        gap: 60px;
+    }
+    .product-5-shop{
+        display: none;
+    }
+    .product-6-shop{
+        display: none;
+    }
 }
 
 @media (max-width: 320px){
-    
+    .shop-main{
+        height: 900px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 42% 42% 8%;
+        grid-template-areas: 
+        "."
+        "product1"
+        "product2"
+        "."
+        ;
+    }
+    .product-card{
+        width: 250px;
+        height: 280px;
+    }
+    .text-product{
+        font-size: 10px;
+        letter-spacing: 2px;
+        gap: 60px;
+    }
+    .product-3-shop, .product-4-shop, .product-5-shop, .product-6-shop{
+        display: none;
+    }
+    .filter{
+        display: none;
+    }
+    .sort{
+        display: none;
+    }
 }
+
+

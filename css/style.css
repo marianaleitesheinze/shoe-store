@@ -13,54 +13,63 @@
 
 main{
     width: 100%;
+    padding-top: 100px
 }
 
-header{
-    background-color: #D4D5D0;
+header {
+    background-color:  #D4D5D0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 10rem;
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "shop logo contact"
-    ;
 }
 
-.shop{
-    grid-area: shop;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 40px;
 }
 
-.logo{
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.contact{
-    grid-area: contact;
+.navbar li {
+    display: inline;
+    margin-left: 20px;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar{
-    list-style: none;
-    display: flex;
-}
-
-.navbar li a{
+nav a {
     text-decoration: none;
-    text-transform: uppercase;
     color: black;
-    font-family:'Catamaran', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: .3125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
 }
+
+@media (max-width: 450px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
 
 
 /* ---------------------------- INDEX --------------------------- */
@@ -318,8 +327,9 @@ nav{
 /* ------------- FOOTER --------------- */
 
 footer{
+    padding-top: 30px;
 	width: 100%;
-	height: 17.6875rem;
+	height: 200px;
 	background-color: #D9D9D9;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -362,118 +372,50 @@ footer nav li a{
 
 }
 
+@media (max-width: 500px){
+    .nav-1{
+        display: none;
+    }
+}
+
 /* ------------------------ SHOP -------------------------- */
 
-.shop-main{
-    width: 100%;
-    height: 1250px;
-    background-color: #9a9a9a;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 8% 42% 42%x 8%;
-    grid-template-areas: 
-    "filter . . sort"
-    "product1 product2 product3 product4"
-    "product5 product6 . ."
-    ". . . ."
-    ;
-    justify-items: center;
-    align-items: center;
+/* Estilos generales */
+.main-catalogo {
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    background-color: #adadad;
 }
 
-.product-1-shop{
-    grid-area: product1;
-    width: 340px;
-    height: 430px;
-    background-color: #D9D9D9;
-}
-
-.product-1-shop img{
-    width: 100%;
-}
-
-.product-2-shop{
-    grid-area: product2;
-    width: 340px;
-    height: 430px;
-    background-color: #D9D9D9;
-}
-
-.product-2-shop img{
-    width: 100%;
-}
-
-.product-3-shop{
-    grid-area: product3;
-    width: 340px;
-    height: 430px;
-    background-color: #D9D9D9;
-
-}
-
-.product-3-shop img{
-    width: 100%;
-}
-
-.product-4-shop{
-    grid-area: product4;
-    width: 340px;
-    height: 430px;
-    background-color: #D9D9D9;
-}
-
-.product-4-shop img{
-    width: 100%;
-}
-
-.product-5-shop{
-    grid-area: product5;
-    width: 340px;
-    height: 430px;
-    background-color: #D9D9D9;
-
-}
-
-.product-5-shop img{
-    width: 100%;
-}
-
-.product-6-shop{
-    grid-area: product6;
-    width: 340px;
-    height: 430px;
-    background-color: #D9D9D9;
-}
-
-.product-6-shop img{
-    width: 100%;
-}
-
-.filter{
-    grid-area: filter;
+.catalogo {
     display: flex;
-    align-items: flex-start;
-    color: white;
-    padding: 2.5rem 0rem 0rem 6.25rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.sort{
-    grid-area: sort;
-    display: flex;
-    justify-content:flex-end;
-    color: white;
-    padding: 2.5rem 6.25rem 0rem 0rem;
+.producto {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px; /* Establece el ancho máximo de los productos */
 }
 
-.text-product{
-    font-family: 'Catamaran', sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .25rem;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+/* Estilos específicos para pantallas más pequeñas (media queries) */
+@media screen and (max-width: 768px) {
+    .catalogo {
+        flex-direction: column;
+    }
+    .producto {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+    }
 }
+
+
+
 
 /* --------------------- CONTACTO ----------------- */
 
@@ -1143,149 +1085,3 @@ footer nav li a{
     background-image: url(../assets/img/Rectangle41.png);
     background-size: cover;
 }
-
-
-
-@media (max-width: 1024px){
-    .shop-main{
-        height: 1000px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 8% 42% 42% 8%;
-        grid-template-areas: 
-        "filter . . sort"
-        "product1 product2 product3 product4"
-        "product5 product6 . ."
-        ". ."
-        ;
-    }
-    .product-card{
-        width: 240px;
-        height: 300px;
-    }
-    .text-product{
-        font-size: 12px;
-        letter-spacing: .25rem;
-        gap: 80px;
-    }
-}
-
-@media (max-width: 768px){
-    .shop-main{
-        height: 960px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 8% 42% 42% 8%;
-        grid-template-areas: 
-        "filter . sort"
-        "product1 product2 product3"
-        "product4 product5 product6"
-        ". . ."
-        ;
-    }
-    .product-card{
-        width: 240px;
-        height: 300px;
-    }
-    .text-product{
-        font-size: 12px;
-        letter-spacing: .25rem;
-        gap: 80px;
-    }
-}
-
-@media (max-width: 425px){
-    .shop-main{
-        height: 900px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 8% 42% 42% 8%;
-        grid-template-areas: 
-        "filter sort"
-        "product1 product2"
-        "product3 product4"
-        ". ."
-        ;
-    }
-    .product-card{
-        width: 200px;
-        height: 260px;
-    }
-    .text-product{
-        font-size: 10px;
-        letter-spacing: 2px;
-        gap: 60px;
-    }
-    .product-5-shop{
-        display: none;
-    }
-    .product-6-shop{
-        display: none;
-    }
-
-}
-
-@media (max-width: 375px){
-    .shop-main{
-        height: 800px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 8% 42% 42% 8%;
-        grid-template-areas: 
-        "filter sort"
-        "product1 product2"
-        "product3 product4"
-        ". ."
-        ;
-    }
-    .product-card{
-        width: 180px;
-        height: 240px;
-    }
-    .text-product{
-        font-size: 10px;
-        letter-spacing: 2px;
-        gap: 60px;
-    }
-    .product-5-shop{
-        display: none;
-    }
-    .product-6-shop{
-        display: none;
-    }
-}
-
-@media (max-width: 320px){
-    .shop-main{
-        height: 900px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 8% 42% 42% 8%;
-        grid-template-areas: 
-        "."
-        "product1"
-        "product2"
-        "."
-        ;
-    }
-    .product-card{
-        width: 250px;
-        height: 280px;
-    }
-    .text-product{
-        font-size: 10px;
-        letter-spacing: 2px;
-        gap: 60px;
-    }
-    .product-3-shop, .product-4-shop, .product-5-shop, .product-6-shop{
-        display: none;
-    }
-    .filter{
-        display: none;
-    }
-    .sort{
-        display: none;
-    }
-}
-
-

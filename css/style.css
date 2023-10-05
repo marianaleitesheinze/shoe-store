@@ -18,123 +18,65 @@ main{
 
 header {
     background-color:  #D4D5D0;
-    color: #fff;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    padding: 10px 20px; 
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1;
 }
-/* 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    padding-left: 40px;
-}
-
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Catamaran', sans-serif;
-    letter-spacing: 2px;
-}
-
-@media (max-width: 450px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-} */
-
 .nav-wrapper{
     width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    height: 120px;
 }
 
-
-.nav-as{
+.nav-menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: #D4D5D0;
     padding: 1rem 1.5rem;
-    width: 100%;
 }
 
-.nav-as .logo{
-    padding-left: 30px;
+.nav-menu .logo{
+    font-weight: 700;
 }
 
-.nav-as ul{
+.nav-menu ul{
     list-style: none;
     display: flex;
     gap: 2rem;
-}
-
-.menu ul{
-    display: flex;
     align-items: center;
 }
 
-.nav-as a{
+.nav-menu a{
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.506);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.nav-as #toggle, nav label{
+.nav-menu #toggle, .nav-menu label{
     display: none;
 }
 
-
-
 @media(max-width: 768px){
-    .nav-as .menu{
+    .nav-menu .menu{
         width: 100%;
         height: 0;
         overflow: hidden;
     }
-    .nav-as ul{
+    .nav-menu ul{
         flex-direction: column;
         align-items: center;
         padding: 0.5rem 0px;
     }
-    .nav-as label{
+    .nav-menu label{
         display: flex;
         color: white;
         cursor: pointer;
     }
-    .nav-as #toggle:checked ~ .menu{
+    .nav-menu #toggle:checked ~ .menu{
         height: 100%;
     }
 }
-
 
 
 /* ---------------------------- INDEX --------------------------- */

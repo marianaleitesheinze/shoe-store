@@ -13,70 +13,41 @@
 
 main{
     width: 100%;
-    padding-top: 100px
 }
 
-header {
-    background-color:  #D4D5D0;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-}
-.nav-wrapper{
-    width: 100%;
-}
-
-.nav-menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+header{
     background-color: #D4D5D0;
-    padding: 1rem 1.5rem;
+
 }
 
-.nav-menu .logo{
-    font-weight: 700;
+.logo{
+    width: 60px;
+    height: 80px;
+    margin: 15px;
 }
 
-.nav-menu ul{
+.carrito-header{
     list-style: none;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
 }
 
-.nav-menu a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.506);
-    text-transform: uppercase;
+.carrito-header img{
+    margin-top: 15px;
+}
+
+header ul li a{
+    font-family: 'Catamaran', sans-serif;
     letter-spacing: 2px;
 }
 
-.nav-menu #toggle, .nav-menu label{
-    display: none;
+@media (max-width:860px){
+    .carrito-header{
+        padding: 0;
+    }
+    form input[type="search"]{
+        width: 100px;
+    }
 }
 
-@media(max-width: 768px){
-    .nav-menu .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav-menu ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0px;
-    }
-    .nav-menu label{
-        display: flex;
-        color: white;
-        cursor: pointer;
-    }
-    .nav-menu #toggle:checked ~ .menu{
-        height: 100%;
-    }
-}
 
 
 /* ---------------------------- INDEX --------------------------- */
@@ -341,17 +312,6 @@ header {
     }
 }
 
-
-
-/* @media (max-width: 768px) {
-    .top-prod {
-        flex-direction: column;
-    }
-    .card-ts {
-        max-width: 100%; 
-    }
-} */
-
 .galeria-img-index{
     margin: 50px;
 }
@@ -431,6 +391,13 @@ header {
         "adidas-cat nike-cat"
         "nb-cat cm-cat"
         ;
+    }
+}
+
+@media (max-width:375px){
+    .categories-main div button a{
+        font-size: 15px;
+        letter-spacing: 2px;
     }
 }
 
@@ -539,63 +506,29 @@ header {
 
 /* ------------- FOOTER --------------- */
 
-/* footer{
-    padding-top: 30px;
-	width: 100%;
-	height: 200px;
-	background-color: #D9D9D9;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 100%;
-	grid-template-areas: 
-	"nav-1 nav-2 nav-3 nav-4"
-	;
+footer{
+    width: 100%;
+    background-color: rgb(217, 217, 217);
 }
 
-.nav-1{
-	grid-area: nav-1;
+.info-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.nav-2{
-	grid-area: nav-2;
-}
-
-.nav-3{
-	grid-area: nav-3;
-}
-
-.nav-4{
-	grid-area: nav-4;
-}
-
-footer nav ul{
-    list-style: none;
-}
-
-footer nav li{
-    text-transform: uppercase;
-    font-family: 'Catamaran', sans-serif;
-    font-size: .75rem;
-    letter-spacing: .0625rem;
-}
-
-footer nav li a{
-    color: black;
+.footer-info li a{
     text-decoration: none;
-
+    color: black;
 }
 
-@media (max-width: 500px){
-    .nav-1{
-        display: none;
-    }
-} */
+.footer-info li{
+    margin-left: 5px;
+}
 
 /* ------------------------ SHOP -------------------------- */
 
 .main-catalogo {
     font-family: Arial, sans-serif;
-    margin-top: 50px;
     background-color: #adadad;
 }
 
@@ -625,14 +558,19 @@ footer nav li a{
     }
 }
 
-.filter-drop{
-    padding-left: 40px;
+.sort-drop{
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
+.filter-drop{
+    margin-right: 40px;
+    margin-top: 20px;
+}
 
 /* --------------------- CONTACTO ----------------- */
 
-.contact-main{
+/* .contact-main{
     width: 100%;
     height: 51.9375rem;
     background-color: #D4D5D0;
@@ -645,9 +583,22 @@ footer nav li a{
 
 }
 
+@media (max-width:900px){
+    .contact-main{
+        height: 51.9375rem;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "contact-box"
+        "list-grid"
+        ;
+    
+    }
+} */
+
 /* cajita de contacto */
 
-.contact-form-box{
+/* .contact-form-box{
     grid-area: contact-box;
 }
 
@@ -657,8 +608,8 @@ footer nav li a{
 
 .div-form-contact{
     background-color: #729F84;
-    width: 50.125rem;
-    height: 45rem;
+    width: 550px;
+    height: 500px;
     margin-left: 3.75rem;
     border-radius: 3.125rem;
 }
@@ -666,7 +617,7 @@ footer nav li a{
 .div-form-contact{
     display: flex;
     justify-content: center;
-    padding-top: 3.75rem;
+    padding-top: 25px;
 }
 
 .div-form-contact form{
@@ -680,8 +631,8 @@ footer nav li a{
     color: white;
     font-family: 'Catamaran', sans-serif;
     font-weight: 500;
-    font-size: 2.125rem;
-    letter-spacing: .875rem;
+    font-size: 28px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -692,7 +643,7 @@ footer nav li a{
     height: 3.6875rem;
     border-radius: 1.25rem;
     border: none;
-    margin-top: 2.5rem;
+    margin-top: 10px;
 }
 
 .contact-form-box form input[placeholder="Name"]{
@@ -715,11 +666,11 @@ footer nav li a{
 
 .div-form-contact form input[type="text"]{
     width: 26.5rem;
-    height: 9.625rem;
+    height: 100px;
     background-color: #d9d9d997;
     border-radius: 1.25rem;
     border: none;
-    margin-top: 2.5rem;
+    margin-top: 10px;
 }
 
 .div-form-contact form input[placeholder="Message"]{
@@ -729,6 +680,7 @@ footer nav li a{
     font-weight: 300;
     padding-left: .9375rem;
     padding-bottom: 6.25rem;
+    padding-top: 20px;
     color: #587d66;
 }
 
@@ -749,23 +701,41 @@ footer nav li a{
     font-weight: 500;
     text-transform: uppercase;
     color: #729F84;
-}
+} */
 
 /* lista de info contacto */
 
-.info-contacto{
+/* .info-contacto{
     list-style: none;
 }
 
 .info-contacto li{
-    padding: 1.875rem 0rem 0rem .625rem;
+    padding: 20px 0rem 0rem .625rem;
     font-family: 'Catamaran', sans-serif;
-    font-size: 1.25rem;
+    font-size: 15px;
     letter-spacing: .25rem;
 }
 
 .iframe-maps{
     padding-top: .625rem;
+}  */
+
+.main-contacto{
+    background-color: #D4D5D0;
+}
+
+.main-contacto h2{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 20px 0px 0px 40px; */
+    text-align: center;
+}
+
+.main-contacto form{
+    text-align: center;
+}
+
+.contacto-info{
+    text-align: center;
 }
 
 /* --------------------- CART --------------------- */
@@ -1315,49 +1285,3 @@ footer nav li a{
     padding-bottom: 20px;
 }
 
-
-footer{
-    width: 100%;
-    background-color: rgb(217, 217, 217);
-}
-
-/* .footer-info{
-    padding-top: 30px;
-}
-
-footer div ul li{
-    list-style: none;
-}
-
-footer div ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-footer div ul li p{
-    text-decoration: underline;
-    letter-spacing: 1px;
-}
-
-@media (max-width:768px){
-    .contact-info-footer{
-        display: none;
-    }
-} */
-
-.info-footer{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.footer-info li a{
-    text-decoration: none;
-    color: black;
-}
-
-.footer-info li{
-    margin-left: 5px;
-}

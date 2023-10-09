@@ -16,30 +16,51 @@
 
 <!-- header -->
 
-<header class="nav-wrapper">   
-    <nav class="nav-menu">
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/img/logoold.png" width="60" height="80" alt=""></a>
-        </div>  
-        <input type="checkbox" name="" id="toggle">
-        <label for="toggle"><i class="material-icons">menu</i></label>
-        <div class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./carrito.html"><img src="../assets/img/cart-icon.png" width="50" height="50" alt=""></a></li>
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a href="../index.html"><img src="../assets/img/logoold.png" class="logo" alt=""></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="./shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./shop.html">Adidas</a></li>
+                    <li><a class="dropdown-item" href="./shop.html">Nike</a></li>
+                    <li><a class="dropdown-item" href="./shop.html">New Balance</a></li>
+                    <li><a class="dropdown-item" href="./shop.html">Accesorios</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                </ul>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+            </li>
             </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2 search-place" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        <ul class="carrito-header">
+            <li><a href="./carrito.html"><img src="../assets/img/cart-icon.png" width="50" height="50" alt=""></a></li>
+        </ul>
         </div>
     </nav>
 </header>
-
-
-
-        <main class="contact-main">
 <!-- caja para mandar mensaje -->
-                <section class="contact-form-box">
+                <!-- <section class="contact-form-box">
                     <div class="div-form-contact"> 
                         <form action="action">
                             
@@ -53,9 +74,11 @@
                             <input type="submit" value="send">
                         </form>
                     </div>
-                </section>
+                </section> -->
+
+
 <!-- info de contacto -->
-                <section class="contact-list-grid">
+                <!-- <section class="contact-list-grid">
                     <ul class="info-contacto">
                         <li>
                             <img src="../assets/img/phone.webp" alt="phone" width="40" height="40"> 0000000</li>
@@ -65,20 +88,47 @@
                             <img src="../assets/img/clockicon.png" alt="timetable" width="40" height="40"> L-V 00:00 - 00:00</li>
                         <li>
                             <img src="../assets/img/adressicon.avif" alt="address" width="40" height="40"> Jose Ellauri 350 esq. Solano
-                        </li> 
+                        </li>  -->
 
 <!-- iframe google maps -->
-                        <li>
+                        <!-- <li>
                             <div class="iframe-maps">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d856.5670843633762!2d-56.159729225959325!3d-34.92421725953282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJos%C3%A9%20Ellauri%20350%20esq.%20Solano%20Garc%C3%ADa%20y%20Francisco%2C%20F.%20Garc%C3%ADa%20Cortinas%2C%2011300%20Montevideo!5e0!3m2!1ses-419!2suy!4v1693248621174!5m2!1ses-419!2suy" width="400" height="250" style="border: 20;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe_map"></iframe>
-                            </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3271.295802139809!2d-56.16116052403526!3d-34.92411767449032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1696729738485!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            </div>
 
                         </li>
                     </ul>
-                </section>
+                </section>  -->
 
 
 
+        <main class="main-contacto">
+            <h2>Contactanos</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <form action="action">
+                            <label for="name"></label>
+                            <input class="same-input" type="name" id="name" placeholder="Nombre" required autocomplete="name"> 
+                            <label for="email"></label>
+                            <input class="same-input" type="email" id="email" placeholder="Mail" required autocomplete="email"> <br>
+                            <label for="message"></label>
+                            <input type="text" id="message" placeholder="Message" required> <br>
+                            <input type="submit" value="send">
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-6 contacto-info">
+                        <h3>Telefono</h3>
+                        <p>00000000</p>
+                        <h3>Mail</h3>
+                        <p>mmmmmmmm</p>
+                        <h3>Dirección</h3>
+                        <p>00000 mmmm</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3271.295802139809!2d-56.16116052403526!3d-34.92411767449032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1696729738485!5m2!1ses-419!2suy" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </main>
 
 

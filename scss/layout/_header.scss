@@ -1,0 +1,22 @@
+header{
+    background-color: $bg-prinicipal;
+}
+
+.logo{
+    width: 60px;
+    height: 80px;
+    margin: 15px;
+}
+
+.carrito-header{
+    list-style: none;
+    img{
+        margin-top: 15px;
+    }
+}
+
+
+header ul li a{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
+}

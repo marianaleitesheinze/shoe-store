@@ -1,0 +1,16 @@
+footer{
+    width: 100%;
+    background-color: $bg-terciario;
+    .info-footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-info li{
+    margin-left: 5px;
+    a{
+        text-decoration: none;
+        color: $color-principal;
+    }
+}

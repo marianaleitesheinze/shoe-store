@@ -1,0 +1,26 @@
+@media (max-width:768px){
+    .info-img-prueba{
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .info-img1{
+        width: 60px;
+        height: 60px;
+    }
+    .info-section div h3{
+        font-size: 15px;
+    }
+    .info-section{
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalogo {
+        flex-direction: column;
+        align-content: center;
+    }
+    .producto {
+        max-width: 100%; 
+    }
+}

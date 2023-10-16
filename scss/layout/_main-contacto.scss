@@ -1,0 +1,94 @@
+.main-contacto{
+    h2{
+        text-transform: uppercase;
+        font-family: 'Catamaran', sans-serif;
+        font-size: map-get($font-size, md);
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+.form-contacto{
+    background-color: map-get($colores, verde);
+    padding: 20px;
+}
+
+.form-contacto form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.form-contacto form input[type="name"]{
+    @include form-input-type(2.5rem);
+}
+
+.form-contacto form input[placeholder="Nombre"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: map-get($font-size, sm);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-left: .9375rem;
+    color: $color-secundario;
+}
+
+.form-contacto form input[type="email"]{
+    @include form-input-type(2.5rem);
+}
+
+.form-contacto form input[placeholder="Mail"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: map-get($font-size, sm);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-left: .9375rem;
+    color: $color-secundario;
+}
+
+.form-contacto form input[type="text"]{
+    @include form-input-type(6.25rem);
+}
+
+.form-contacto form input[placeholder="Message"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: map-get($font-size, sm);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-left: .9375rem;
+    padding-bottom: 60px;
+    color: $color-secundario;
+}
+
+
+.form-contacto form input[type="submit"]{
+    @include form-input-type(40px);
+}
+
+.form-contacto form input[value="send"]{
+    font-family: 'Catamaran', sans-serif;
+    font-size: map-get($font-size, sm);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-secundario;
+}
+
+.contacto-info{
+    padding: 10%;
+    h3{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: $color-principal;
+    }
+    p{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $color-principal;
+        margin-bottom: 10px;
+    }
+}

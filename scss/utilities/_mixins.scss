@@ -1,0 +1,9 @@
+@mixin form-input-type ($height) {
+    background-color: #4D6B59;
+    width: 100%;
+    height: $height;
+    border-radius: .625rem;
+    border: none;
+    margin-top: .625rem;
+    cursor: pointer;
+}

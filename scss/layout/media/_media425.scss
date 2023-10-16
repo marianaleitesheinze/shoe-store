@@ -1,0 +1,22 @@
+@media (max-width:425px){
+    .newsletter h2{
+        font-size: 15px;
+    }
+    .newsletter form{
+        padding-top: 5px;
+    }
+    .newsletter form input[type="email"]{
+        width: 200px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .newsletter form input[type="submit"]{
+        width:100px;
+        height: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .newsletter{
+        height: 100px;
+    }
+}

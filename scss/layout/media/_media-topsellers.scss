@@ -1,0 +1,121 @@
+@media (max-width:1040px){
+    .card-ts{
+        max-width: 280px;
+        max-height: 320px;
+    }
+    .name-price{
+        gap:145px;
+    }
+}
+
+@media (max-width:960px){
+    .card-ts{
+        max-width: 270px;
+        max-height: 310px;
+    }
+    .name-price{
+        gap:140px;
+    }
+}
+
+@media (max-width:930px){
+    .shoes3-ts{
+        display: none;
+    }
+}
+
+@media (max-width:660px){
+    .card-ts{
+        max-width: 260px;
+        max-height: 300px;
+    }
+    .name-price{
+        gap:130px;
+    }
+    .top-sellers{
+        height: 450px;
+    }
+}
+
+@media (max-width:640px){
+    .card-ts{
+        max-width: 250px;
+        max-height: 280px;
+    }
+    .top-prod div h3{
+        font-size: 10px;
+    }
+    .name-price{
+        gap:130px;
+    }
+    .top-sellers{
+        height: 420px;
+    }
+}
+
+@media (max-width:610px){
+    .card-ts{
+        max-width: 240px;
+        max-height: 270px;
+    }
+    .name-price{
+        gap:120px;
+    }
+}
+
+
+@media (max-width:540px){
+    .card-ts{
+        max-width: 220px;
+        max-height: 250px;
+    }
+    .top-prod div h3{
+        font-size: 10px;
+    }
+    .name-price{
+        gap:120px;
+    }
+    .top-sellers{
+        height: 400px;
+    }
+}
+
+@media (max-width:520px){
+    .card-ts{
+        max-width: 200px;
+        max-height: 240px;
+    }
+    .name-price{
+        gap: 6.25rem;
+    }
+}
+
+@media (max-width:500px){
+    .card-ts{
+        max-width: 180px;
+        max-height: 230px;
+    }
+}
+
+@media (max-width:480px){
+    .card-ts{
+        max-width: 180px;
+        max-height: 210px;
+    }
+    .top-prod div h3{
+        font-size: 10px;
+    }
+    .name-price{
+        gap:60px;
+    }
+    .top-sellers{
+        height: 380px;
+    }
+}
+
+
+@media (max-width:440px){
+    .shoes2-ts{
+        display: none;
+    }
+}

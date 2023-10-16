@@ -1,0 +1,52 @@
+.newsletter{
+    width: 100%;
+    height: 160px;
+    background-color: map-get($colores, verde-oliva);
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.875rem;
+        font-family: 'Catamaran', sans-serif;
+        font-size: map-get($font-size, md);
+        letter-spacing: .4375rem;
+        font-weight: 100;
+    }
+}
+
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.newsletter form input[type="email"]{
+    width: 20.5625rem;
+    height: 45px;
+    border:0.8px solid map-get($colores, gris);
+    background-color: rgba(255, 255, 255, 0.675);
+} 
+
+.newsletter form input[type="submit"]{
+    width:11.75rem;
+    height: 45px;
+    border:0.8px solid grey;
+    display:block;
+    color: $color-principal;
+    background-color:#9CB67A;
+    cursor: pointer;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .4375rem;
+    font-weight: 100;
+    text-transform: uppercase;
+} 
+
+.newsletter form input[placeholder="Email"]{
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .4375rem;
+    font-weight: 100;
+    padding-left: .625rem;
+}

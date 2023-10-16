@@ -1,0 +1,31 @@
+.main-catalogo {
+    font-family: Arial, sans-serif;
+    background-color: $bg-secundario;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 5px;
+    .producto {
+        background-color: map-get($colores, blanco);
+        border: 1px solid map-get($colores, blanco);
+        // margin: 10px;
+        padding: 20px;
+        text-align: center;
+        // flex: 1;
+        max-width: 300px; 
+    }
+}
+
+.sort-drop{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.filter-drop{
+    margin-right: 40px;
+    margin-top: 20px;
+}

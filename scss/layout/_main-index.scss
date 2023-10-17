@@ -13,8 +13,7 @@
     height: 31.25rem;
     background-color: $bg-prinicipal;
     h2{
-        display: flex;
-        justify-content: center;
+        @include flexbox(center);
         font-family: 'Catamaran', sans-serif;
         font-size: map-get($font-size, md);
         letter-spacing: .3125rem;
@@ -26,9 +25,8 @@
 }
 
 .top-prod {
-    display: flex;
+    @include flexbox(space-between);
     flex-wrap: wrap;
-    justify-content: space-around;
     padding: 10px;
     .arrow{
         padding-top: 110px;
@@ -62,8 +60,7 @@
 }
 
 .name-price{
-    display: flex;
-    justify-content: center;
+    @include flexbox(center);
     gap: 10rem;
     padding-top: 10px;
 }
@@ -93,27 +90,21 @@
 }
 
 .nike-cat-main{
+    @extend .adidas-cat-main;
     grid-area: nike-cat;
     background-image: url(../assets/img/color-2.jpeg);
-    background-size: cover;
-    position: relative;
-    display: inline-block;
 }
 
 .nb-cat-main{
+    @extend .adidas-cat-main;
     grid-area: nb-cat;
     background-image: url(../assets/img/color-3.png);
-    background-size: cover;
-    position: relative;
-    display: inline-block;
 }
 
 .cm-cat-main{
+    @extend .adidas-cat-main;
     grid-area: cm-cat;
     background-image: url(../assets/img/color-4.jpeg);
-    background-size: cover;
-    position: relative;
-    display: inline-block;
 }
 
 .categories-main div button{

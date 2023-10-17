@@ -4,8 +4,7 @@
         font-family: 'Catamaran', sans-serif;
         font-size: map-get($font-size, md);
         letter-spacing: 2px;
-        display: flex;
-        justify-content: center;
+        @include flexbox(center);
         padding: 20px;
     }
 }

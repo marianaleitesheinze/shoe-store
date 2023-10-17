@@ -1,0 +1,196 @@
+.shop-cart{
+    background-color: #161B28;
+    width: 100%;
+    /* height: 50.6875rem; */
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 175px 250px 375px;
+    grid-template-areas: 
+    "cart-title ."
+    "cart-prod1 summary"
+    "cart-prod2 summary"
+    ;
+}
+
+.cart-title{
+    grid-area: cart-title;
+    padding-top: 3.125rem;
+    padding-left: 6.25rem;
+    h2{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.875rem;
+        letter-spacing: .375rem;
+        text-transform: uppercase; 
+        font-weight: 200;
+        color: white;
+    }
+    h3{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1rem;
+        letter-spacing: .375rem;
+        text-transform: uppercase; 
+        font-weight: 100;
+        color: white;
+    }
+}
+
+.cart-prod1{
+    grid-area: cart-prod1;
+    background-color: #D9D9D9;
+    width: 42.5rem;
+    height: 11.25rem;
+    margin-left: 6.25rem;
+    display: flex;
+    position: relative;
+    img{
+        height: 100%;
+    }
+}
+
+.info-prod1{
+    padding-left: 1.25rem;
+    h3{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: .1875rem;
+        font-weight: 100;
+        padding-top: .625rem;
+    }
+}
+
+.size-cart{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1875rem;
+    font-weight: 100;
+    padding-top: .625rem;
+}
+
+.cart-price{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .1875rem;
+    font-weight: 500;
+    padding-top: 3.125rem;
+}
+
+.cruz-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.agregar-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cart-prod2{
+    @extend .cart-prod1;
+    grid-area: cart-prod2;
+    img{
+        height: 100%;
+    }
+}
+
+.info-prod2{
+    padding-left: 1.25rem;
+    h3{
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: .1875rem;
+        font-weight: 100;
+        padding-top: .625rem;
+    }
+}
+
+.summary-box{
+    grid-area: summary;
+    width: 20.9375rem;
+    height: 39.0625rem;
+    background-color: $bg-terciario;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 35% 55%;
+    grid-template-areas: 
+    "summary-grid summary-grid"
+    "lista-1 lista-2"
+    "check-out check-out"
+    ;
+}
+
+.summary-grid{
+    grid-area: summary-grid;
+    background-color: #C6C6C6;
+    h3{
+        font-family: 'Catamaran', sans-serif;
+        text-transform: uppercase;
+        color: #161b28bd;
+        letter-spacing: .625rem;
+        font-size: 1.25rem;
+        display: flex; 
+        justify-content: center;
+        padding-top: .625rem;
+    }
+}
+
+.class-2i{
+    grid-area: lista-1;
+}
+
+.ul-list{
+    list-style: none;
+}
+
+.ul-list li{
+    font-family: 'Catamaran', sans-serif;
+    font-size: .9375rem;
+    letter-spacing: .125rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.823);
+    padding-top: .3125rem;
+}
+
+.right-list{
+    padding: 1.25rem 0rem 0rem 1.25rem;
+}
+
+.left-list{
+    padding: 1.25rem 1.25rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: flex-end;
+}
+
+.class-fr{
+    grid-area: lista-2;
+}
+
+.check-out{
+    grid-area: check-out;
+    display: flex;
+    justify-content: center;
+    button{
+        background-color: #161B28;
+        width: 17.3125rem;
+        height: 3.75rem;
+        cursor: pointer;
+        border: none;
+        box-shadow: 1px 1px 10px black;
+        a{
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: .375rem;
+            font-family: 'Catamaran', sans-serif;
+            font-size: 1rem;
+        }
+    }
+}
